@@ -1,0 +1,81 @@
+.chat-container {
+  height: 100vh;
+}
+.main {
+  font-family: "Amiri", serif;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Vollkorn", serif;
+}
+.header {
+  font-family: "Russo One", sans-serif;
+  background-image: linear-gradient(#800000, #ffccff);
+  text-align: center;
+  line-height: 64px;
+  height: 64px;
+  font-size: 26px;
+  color: white;
+}
+.chat-container .conversation-title {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 23px;
+  height: 64px;
+  line-height: 64px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #ff9999;
+}
+
+.chat-container .main {
+  height: calc(100vh - 64px);
+}
+.chat-container .conversation-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.chat-container .list-messages {
+  flex-grow: 1;
+}
+.chat-container #send-message-form {
+  position: relative;
+}
+#send-message-form button {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+}
+#send-message-form .input-wrapper {
+  margin: 0;
+}
+#send-message-form .input-wrapper input {
+  padding: 22px 20px;
+}
+.list-messages .message .content {
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  max-width: 45%;
+}
+.list-messages .message.mine .content {
+  background-image: linear-gradient(#800000, #ffccff);
+}
+.list-messages .message.mine {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.chat-container .list-messages {
+  padding: 10px;
+}
+.list-messages .message.their .content {
+  background-image: linear-gradient(#ffccff, #800000);
+}
+.far {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+.far:hover:hover {
+  background-color: RoyalBlue;
+}

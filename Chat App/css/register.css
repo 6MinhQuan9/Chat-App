@@ -1,0 +1,34 @@
+.register-container{
+    height: 100vh;
+    background-image: url(../Img/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+.register-container #register-form{
+    height: 100%;
+    background-color: white;
+    width: 30%;
+    padding: 40px 10px;
+}
+.register-container #register-header{
+    font-size: 40px;
+    color: #535353;
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.name-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.form-action{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.name-wrapper .input-wrapper{
+    width: 48%;
+}
