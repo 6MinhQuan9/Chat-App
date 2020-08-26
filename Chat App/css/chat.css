@@ -72,9 +72,9 @@
   background-image: linear-gradient(#ffccff, #800000);
 }
 .far {
-  background-color: DodgerBlue; /* Blue background */
-  border: none; /* Remove borders */
-  cursor: pointer; /* Mouse pointer on hover */
+  background-color: DodgerBlue; 
+  border: none; 
+  cursor: pointer; 
 }
 .far:hover:hover {
   background-color: RoyalBlue;
