@@ -49,3 +49,17 @@ controller.login = ({email, password}) => {
     model.login({ email, password });
   }
 };
+controller.newConversation = ({title,email})=>{
+  view.setErrorMessage('create-conversation-title-error',email.trim()===''?'Hay nhap title vao':'')
+  view.setErrorMessage('create-conversation_email-error',email.trim()===''?'Hay nhap email vao':'')
+  if(title.trim()!== '' && email.trim() !== '')
+  {
+    const data = {
+      createdAt: (new Date()).toISOString(),
+      messages: [],
+      title: title,
+      users: [email, model.currentUser.email]
+    }
+    model.newConversation(data)
+  }
+}

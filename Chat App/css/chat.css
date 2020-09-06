@@ -1,3 +1,6 @@
+*:focus {
+  outline: 0 !important;
+}
 .chat-container {
   height: 100vh;
 }
@@ -27,9 +30,11 @@
 
 .chat-container .main {
   height: calc(100vh - 64px);
+  display: flex
 }
 .chat-container .conversation-detail {
   height: 100%;
+  width: 85%;
   display: flex;
   flex-direction: column;
 }
@@ -43,12 +48,16 @@
   position: absolute;
   right: 10px;
   top: 23px;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
 }
 #send-message-form .input-wrapper {
   margin: 0;
 }
 #send-message-form .input-wrapper input {
   padding: 22px 20px;
+  border-left: none;
 }
 .list-messages .message .content {
   width: max-content;
@@ -56,6 +65,7 @@
   border-radius: 4px;
   color: white;
   max-width: 45%;
+  word-break: break-all;
 }
 .list-messages .message.mine .content {
   background-image: linear-gradient(#800000, #ffccff);
@@ -67,15 +77,43 @@
 }
 .chat-container .list-messages {
   padding: 10px;
+  overflow: auto;
 }
 .list-messages .message.their .content {
   background-image: linear-gradient(#ffccff, #800000);
 }
-.far {
-  background-color: DodgerBlue; 
+.fa {
+  color:  rgb(207, 27, 111);
   border: none; 
-  cursor: pointer; 
+  cursor: pointer;
 }
-.far:hover:hover {
-  background-color: RoyalBlue;
+ .fa:hover {
+  color:rgb(211, 24, 24);
+} 
+
+.chat-container .aside-left{
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid #e6e6e6;
+}
+.chat-container .aside-left .create-conversation{
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid #e6e6e6
+}
+.chat-container .aside-left .list-conversations .conversation{
+  padding: 10px;
+}
+.chat-container .aside-left .list-conversations .current{
+  color: white;
+}
+.chat-container .create-conversation #create-conversation{
+  font-family: "Amiri", serif;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Vollkorn", serif;
+}
+.chat-container .aside-left .list-conversations .conversation.current{
+  background-image: linear-gradient(#800000, #ffccff);
 }

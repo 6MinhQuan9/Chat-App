@@ -15,10 +15,11 @@
 }
 .btn{
     padding: 8px 20px;
-    background: #037bfe;
-    color: #ffffff;
+    background-image: linear-gradient(rgb(128, 0, 0), rgb(255, 204, 255));
+    color: white;
     border-radius: 3px;
     border-width: 1px;
+    border: none;
 }
 .cursor-pointer{
     cursor: pointer;

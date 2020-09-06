@@ -15,29 +15,21 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <div class="chat-container">
-      <div class="header">Time To Get Some Chick</div>
-      <div class="main">
-        <div class="conversation-detail">
-          <div class="conversation-title">Fisrt Chick</div>
-          <div class="list-messages">
-            <div class="message mine">
-              <div class="content">Hi em!</div>
-            </div>
-            <div class="message their">
-              <div class="owner">abc@gmail.com</div>
-              <div class="content">Hình như anh chiều em quá.</div>
-            </div>
-          </div>
+    <div class="create-conversation-wrapper">
+      <div class="header">Pick Up Chat</div>
+      <form id='create-conversation-form' style="width: 60%;margin: auto;margin-top: 20px;">
+        <h4>Create conversation</h4>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Conversation Titile" name="title">
+          <div class="error" id='create-conversation-title-error'></div>
         </div>
-          <form id="send-message-form">
-            <div class="input-wrapper">
-              <input type="text" placeholder="Nhắn hay nghỉ đây!!!?" name="message" />
-            </div>
-            <button type="submit">Send</button>
-          </form>
+        <div class="input-wrapper">
+          <input type="email" placeholder="Side Chick's Email" name="title">
+          <div class="error" id='create-conversation-email-error'></div>
         </div>
-      </div>
+        <button class="btn" type="submit">Save</button>
+        <button class="btn btn-bg-light" type="button" id="redirect-to-chat">Cancel</button>
+      </form>
     </div>
   </body>
 </html>

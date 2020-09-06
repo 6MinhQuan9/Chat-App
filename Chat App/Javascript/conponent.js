@@ -58,28 +58,52 @@ component.loginPage = `
       </form>
     </div>
     `
-    component.chatPage = `\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    component.chatPage = `
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Nanum+Myeongjo&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
     <div class="chat-container">
-      <div class="header">Time To Get Some Chick</div>
-      <div class="main">
-        <div class="conversation-detail">
-          <div class="conversation-title">Fisrt Chick</div>
-          <div class="list-messages">
-          </div>
+        <div class="header">
+            Time To Get Some Chick
         </div>
-          <form id="send-message-form">
-            <div class="input-wrapper">
-              <input type="text" placeholder="Nhắn hay nghỉ đây!!!?" name="message" />
+        <div class="main">
+            <div class="aside-left">
+                <div class="create-conversation">
+                    <button class="btn cursor-pointer" id="create-conversation">+ New conversation</button>
+                </div>
+                <div class="list-conversations">
+                </div>
             </div>
-            <button type="submit"><i class="far fa-paper-plane "></i></button>
-          </form>
+            <div class="conversation-detail">
+                <div class="conversation-title">First conversation</div>
+                <div class="list-messages"></div>
+                <form id="send-message-form">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Type of message" name="message"></input>
+                    </div>
+                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
         </div>
-      </div>
     </div>
     `
+    component.createNewConversation = `
+    <div class="create-conversation-wrapper">
+      <div class="header">Pick Up Chat</div>
+      <form id='create-conversation-form' style="width: 60%;margin: auto;margin-top: 20px;">
+        <h4>Create conversation</h4>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Conversation Titile" name="title">
+          <div class="error" id='create-conversation-title-error'></div>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" placeholder="Side Chick's Email" name="title">
+          <div class="error" id='create-conversation-email-error'></div>
+        </div>
+        <button class="btn" type="submit">Save</button>
+        <button class="btn btn-bg-light" type="button" id="redirect-to-chat">Cancel</button>
+      </form>
+    </div>`
