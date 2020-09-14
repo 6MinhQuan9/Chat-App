@@ -29,6 +29,7 @@ window.onload = () => {
         view.setActiveScreen("registerPage");
       }
     });
+    // hhjjj
   // templateFirestore();
 };
 
